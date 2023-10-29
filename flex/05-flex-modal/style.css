@@ -20,14 +20,43 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
 }
+
+.content {
+  display: flex;
+  gap: 25px;
+  margin: 15px;
+}
+
+.right {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.header {
+  padding: 0;
+  margin: 0;
+  /* margin-top: auto;
+  margin-bottom: auto; */
+}
+
+
 
 .icon {
   color: royalblue;
   font-size: 26px;
   font-weight: 700;
   background: lavender;
-  width: 42px;
+  min-width: 42px;
   height: 42px;
   border-radius: 50%;
   display: flex;
@@ -36,18 +65,24 @@ body {
 }
 
 .close-button {
-  background: #eee;
+  background: #dfdfdf;
   border-radius: 50%;
-  color: #888;
-  font-weight: 400;
+  color: #6e6e6e;
+  font-weight: bolder;
   font-size: 16px;
-  height: 24px;
-  width: 24px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
+  text-align:center;
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.text {
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
 button {
